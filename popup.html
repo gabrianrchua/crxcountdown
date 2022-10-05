@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="main.css">
+    </head>
+    <body class="light" id="body">
+        <h1>CRXCountdown</h1>
+        <p>Add a countdown timer to any tab.</p>
+        <div class="caption">
+            <input type="checkbox" id="chkTheme">Dark Theme
+            <input type="color" id="inpColor" value="#44ff44">&nbsp;Bar Color<br>
+        </div>
+        <hr>
+        <div>
+            <b>Start time</b><br>
+            <input type="checkbox" id="chkStartNow"><span class="caption">Now</span><br>
+            <input type="number" maxlength="2" min="1" max="12" size="3" placeholder="Hour" id="inpStartHour">&nbsp;:&nbsp;
+            <input type="number" maxlength="2" min="0" max="59" size="3" placeholder="Minute" id="inpStartMinute">
+            <input type="checkbox" id="chkStartPm">PM<br><br>
+            <b>End time</b><br>
+            <input type="number" maxlength="2" min="1" max="12" size="3" placeholder="Hour" id="inpEndHour">&nbsp;:&nbsp;
+            <input type="number" maxlength="2" min="0" max="59" size="3" placeholder="Minute" id="inpEndMinute">
+            <input type="checkbox" id="chkEndPm">PM<br><br>
+        </div>
+        <button id="btnStartTimer">Start!</button>
+    </body>
+    <script src="popup.js"></script>
+</html>

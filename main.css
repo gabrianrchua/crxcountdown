@@ -1,0 +1,19 @@
+body {
+    padding: 12px;
+    font-family: system-ui;
+    font-size: 1.2em;
+}
+.dark {
+    background-color: black;
+    color: white;
+}
+.light {
+    background-color: white;
+    color: black;
+}
+button, input {
+    font-size: 1.2em;
+}
+.caption {
+    font-size: 0.8em;
+}
