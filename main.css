@@ -17,3 +17,8 @@ button, input {
 .caption {
     font-size: 0.8em;
 }
+.errorMsg {
+    background-color: "#ff8585";
+    padding: 2px;
+    border-radius: 6px;
+}

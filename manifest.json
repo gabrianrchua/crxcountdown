@@ -9,7 +9,11 @@
             "128": "/img/icon_128.png"
         }
     },
-    "permissions": ["storage"],
+    "permissions": [
+        "storage",
+        "activeTab",
+        "scripting"
+    ],
     "icons": {
         "128": "/img/icon_128.png"
     }
