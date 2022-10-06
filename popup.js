@@ -67,7 +67,7 @@ function showError(msg) {
     divErrMsg.innerText = msg;
     setTimeout(() => {
         divErrMsg.innerText = "";
-    }, 2000);
+    }, 5000);
 }
 function startTimerInTab(startTime, endTime, color) {
     const startDate = new Date(startTime);
@@ -201,6 +201,11 @@ btnStartTimer.addEventListener("click", () => {
 
     // inject the code
     chrome.tabs.query({active: true, currentWindow: true}, function(tabs) {
+        const url = tabs[0].url;
+        if (url.includes("chrome://") || url.includes("edge://")) {
+            showError("Cannot inject timer into a protected browser tab!")
+            return;
+        }
         chrome.scripting.executeScript({
                 target: {tabId: tabs[0].id},
                 func: startTimerInTab,

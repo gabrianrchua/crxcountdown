@@ -1,0 +1,3 @@
+todo
+[ ] disable start time fields on tick now box
+[ ] add done graphic
