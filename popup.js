@@ -17,8 +17,7 @@ let btnStartTimer = document.getElementById("btnStartTimer");
 let divErrMsg = document.getElementById("divErrMsg");
 
 // other vars
-let curTab;
-let curColor;
+let curColor = "#77ff77";
 
 // storage functions
 function applyTheme() {
